@@ -1,0 +1,100 @@
+<html>
+
+<head>
+	<title>Okunabilirlik Hesaplayıcı</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bower_components/components-bootstrap/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="bodycont">
+		<div class="bodycontc" style="margin: 15px;">
+
+			<div class="cont" style="width: 68%;">
+				<div class="header">Metin</div>
+				<div style="flex-grow: 1; position: relative;">
+					<textarea class="input-area" placeholder="Yazı giriniz..."></textarea>
+				</div>
+			</div>
+
+			<div class="cont" style="width: 32%; min-width: 300px;">
+				<div style="flex-grow: 1;">
+					<ul class="list-group">
+						<li class="list-group-item">
+							Cümle Sayısı
+							<span class="badge alert-info result-sentence"></span>
+						</li>
+						<li class="list-group-item">
+							Kelime sayısı
+							<span class="badge alert-info result-words"></span>
+						</li>
+
+						<li class="list-group-item">
+							Hece sayısı
+							<span class="badge alert-info result-syllables"></span>
+						</li>
+						<li class="list-group-item" style="border-top: none; padding: 0;">
+							<ul class="list-group-item" style="border: 0; padding: 0;">
+								<li class="list-group-item lisub">
+									1 heceli kelime sayısı
+									<span class="badge alert-info result-syllables-1"></span>
+									<div class="lisubp lisubp1"></div>
+								</li>
+								<li class="list-group-item lisub">
+									2 heceli kelime sayısı
+									<span class="badge alert-info result-syllables-2"></span>
+									<div class="lisubp lisubp2"></div>
+								</li>
+								<li class="list-group-item lisub">
+									3 heceli kelime sayısı
+									<span class="badge alert-info result-syllables-3"></span>
+									<div class="lisubp lisubp3"></div>
+								</li>
+								<li class="list-group-item lisub">
+									4 ve üzeri heceli kelime sayısı
+									<span class="badge alert-info result-syllables-4"></span>
+									<div class="lisubp lisubp4"></div>
+								</li>
+							</ul>
+						</li>
+
+						<li class="list-group-item">
+							Harf sayısı
+							<span class="badge alert-info result-letters"></span>
+						</li>
+
+						<li class="list-group-item">
+							Ortalama kelime uzunluğu
+							<span class="badge alert-info result-average-words"></span>
+						</li>
+						<li class="list-group-item">
+							Ortalama cümle uzunluğu
+							<span class="badge alert-info result-average"></span>
+						</li>
+
+					</ul>
+					<ul class="list-group" style="margin-bottom: 0;">
+						<li class="list-group-item list-group-item-success">
+							Ateşman
+							<span class="badge alert-success result-atesman"></span>
+						</li>
+						<li class="list-group-item list-group-item-success">
+							Çetinkaya-Uzun
+							<span class="badge alert-success result-cetinkaya"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/components-bootstrap/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
